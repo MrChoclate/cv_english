@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{fontawesome}
+
+\usepackage[scale=0.78]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{2.4cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\firstname{Clément} % Your first name
+\familyname{Villain} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Software Engineering Student}
+\address{13 rue d'Orléans}{Théméricourt, France 95450}
+\mobile{+33 6 38 38 60 19}
+\email{villaincle@eisti.eu}
+\extrainfo{%
+  \faGithub~\httplink{github.com/MrChoclate}}
+%\quote{6 month internship from April, $10^{th}$}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\section{Objective: \textit{Software Engineer} position}
+
+\cvitem{}{Currently finishing my engineering degree, I am seeking for challenging opportunities to develop cutting-edge software. I am available for a six-month pre-employment internship from April, $10^{th}$.}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012-2017 (expected)}{EISTI}{École Internationale des Sciences du Traitement de l’Information}{Cergy, France}{}{A leading French software engineering school awarding a master's degree in computer information systems.
+The program also includes accounting, management, communication and two foreign languages.}
+\cventry{2012}{Baccalauréat S, section européenne espagnol}{Lycée Jules Verne}{Cergy, France}{Mention Très Bien}{French Baccalauréat with honors equivalent to 'A' level, specialization in science with an option of history and geography in Spanish}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+%------------------------------------------------
+
+\cventry{2015--Present}{CTO}{\textsc{PolyLearn}}{Cergy}{France}{
+\begin{itemize}
+\item Co-founded a start-up specialized in e-learning
+\item Developed and maintained \url{polylearn.co} with AngularJS and Python
+\item Used modern development practices: code reviews, continuous integration, testing
+\item Set up monitoring system via statsd and Prometheus
+\end{itemize}}
+
+\cventry{2014--Present}{Android Developer}{\textsc{EISTI}}{Cergy}{France}{
+\begin{itemize}
+\item Developed an Android application with Kivy framework in Python for the communication department of \textsc{EISTI}
+\item Linked the application to a ElasticSearch/Kibana server to visualize the collected data.
+\item Maintained the application
+\end{itemize}}
+
+\cventry{2014}{Intern}{\textsc{EISTI}}{Cergy}{France}{
+\begin{itemize}
+\item Applied community detection algorithm for a PhD student of \textsc{EISTI}
+\item Transformed data with Python scripts
+\item Used Hadoop map reduce
+\end{itemize}}
+
+%------------------------------------------------
+\newgeometry{scale=0.78, top=1cm, bottom=3cm}
+\scalebox{0.66}{
+  \begin{minipage}[b]{\makecvtitlenamewidth}%
+    \namestyle{Clément Villain}%
+    \ifthenelse{\equal{Software Engineering Student}{}}{}{\\[1.25em]\titlestyle{Software Engineering Student}}%
+  \end{minipage}}%
+  \hfill~~%
+ % detailed information
+  \usebox{\makecvtitledetailsbox}
+~\\
+~\\
+
+\subsection{Personal}
+
+\cventry{2015--2016}{President}{\textsc{ATILLA}, not-for-profit organisation}{Student hackerspace}{}{
+\begin{itemize}
+\item Organised training sessions, talks, events and trips for students
+\item Gave talks about fast inverse square root and hybrid mobile app
+\item Designed the front-end of an AI contest
+\end{itemize}}
+
+\cventry{2014--2016}{Math Examiner}{\textsc{EISTI}}{Cergy}{France}{
+\begin{itemize}
+\item Examined weekly mathematical knowledge of first and second year student at \textsc{EISTI}
+\end{itemize}}
+
+\cventry{2015}{TTS Developer}{}{Cergy}{France}{
+\begin{itemize}
+\item Developed a Text To Speech software using Librivox database and a concatenative method
+\item Created the relation sound/word using CMU Sphinx
+\item Recorded 17,000 different words from 360 hours of audio
+\end{itemize}}
+
+%\cventry{2013}{Summer student}{Glyndwr Univeristy}{Wrexham}{Wales}{Learned and applied a set of tools for video games development: LightWave 3D, Torque3D, Photoshop}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Theory}{Algorithms, Data Structures, Complexity, Machine Learning}
+\cvitem{Languages}{Mainly used: Python, Javascript, Typescript, CSS \& HTML. \newline Worked with: C, C++, Java}
+\cvitem{Technologies}{Django, Celery, PostgreSQL, Apache Cordova, AngularJS, Polymer}
+\cvitem{Tools}{Git, Latex, Unix shell}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2015}{Prologin, French national computer science contest, ranked first}
+\cvitem{2014}{RobAfis, French national robotics contest, team ranked first}
+
+\section{Succeeded MOOC}
+\cvitem{Coursera}{Algorithms: Design and Analysis, Part 1 (98\%)}
+\cvitem{Coursera}{Automata (78.8\%)}
+\cvitem{Coursera}{Cryptography I (80\%)}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitem{French}{Native Speaker}
+\cvitem{English}{Fluent (Toeic 960)}
+\cvitem{Spanish}{Intermediate (Bulats C1)}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvitem{}{Open source software}
+\cvitem{}{French Coinche}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Thales Raytheon Systems Co\\1 Avenue Carnot\\91883 Massy, France} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Yours faithfully,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documentssetuped
+%
+%\makelettertitle % Print letter title
+%
+%Currently student in second year of engineering school at EISTI, I'm looking for an internship of five month in analysis, from May to October 2016.
+%
+%Thales is a model of excellence in the fields of aeronautics, aerospace, defense and security. The advanced technologies used in its information systems made me apply. 
+%
+%Fascinated by computer science, I am constantly in search of challenge. As part of my studies, I successfully participated in robotics competition (robAFIS) and programming contest (Prologin). RobAFIS allowed me to develop my ability to worke in a mutlidisciplinary team. I have also demonstrated autonomy and initiative, which is necessary to carry out such projects.
+%
+%In a previous internship, I extracted large insurance data and applied community detection algorithms, so I am well aware of the "Big Data" problematic. I see your offer as a continuation of my career.
+%
+%I look forward to meeting with you to further discuss my 
+%suitability for this position. In the meantime, I may 
+%be contacted at the phone number and email address in cv. Thank you for your time and interest.
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
