@@ -23,7 +23,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -31,7 +31,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage{fontawesome}
 
-\usepackage[scale=0.78]{geometry} % Reduce document margins
+\usepackage[scale=0.93]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{2.4cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -59,11 +59,6 @@
 
 \makecvtitle % Print the CV title
 
-\section{Objective: \textit{Software Engineer} position}
-
-\cvitem{}{Currently finishing my engineering degree, I am seeking for challenging opportunities to develop cutting-edge software. I am available for a six-month pre-employment internship from April, $10^{th}$.}
-
-
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -72,8 +67,6 @@
 
 \cventry{2012-2017 (expected)}{EISTI}{École Internationale des Sciences du Traitement de l’Information}{Cergy, France}{}{A leading French software engineering school awarding a master's degree in computer information systems.
 The program also includes accounting, management, communication and two foreign languages.}
-\cventry{2012}{Baccalauréat S, section européenne espagnol}{Lycée Jules Verne}{Cergy, France}{Mention Très Bien}{French Baccalauréat with honors equivalent to 'A' level, specialization in science with an option of history and geography in Spanish}
-
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
@@ -107,17 +100,17 @@ The program also includes accounting, management, communication and two foreign 
 \end{itemize}}
 
 %------------------------------------------------
-\newgeometry{scale=0.78, top=1cm, bottom=3cm}
-\scalebox{0.66}{
-  \begin{minipage}[b]{\makecvtitlenamewidth}%
-    \namestyle{Clément Villain}%
-    \ifthenelse{\equal{Software Engineering Student}{}}{}{\\[1.25em]\titlestyle{Software Engineering Student}}%
-  \end{minipage}}%
-  \hfill~~%
- % detailed information
-  \usebox{\makecvtitledetailsbox}
-~\\
-~\\
+%\newgeometry{scale=0.78, top=1cm, bottom=3cm}
+%\scalebox{0.66}{
+%  \begin{minipage}[b]{\makecvtitlenamewidth}%
+%    \namestyle{Clément Villain}%
+%    \ifthenelse{\equal{Software Engineering Student}{}}{}{\\[1.25em]\titlestyle{Software Engineering Student}}%
+%  \end{minipage}}%
+%  \hfill~~%
+% % detailed information
+%  \usebox{\makecvtitledetailsbox}
+%~\\
+%~\\
 
 \subsection{Personal}
 
@@ -133,12 +126,6 @@ The program also includes accounting, management, communication and two foreign 
 \item Examined weekly mathematical knowledge of first and second year student at \textsc{EISTI}
 \end{itemize}}
 
-\cventry{2015}{TTS Developer}{}{Cergy}{France}{
-\begin{itemize}
-\item Developed a Text To Speech software using Librivox database and a concatenative method
-\item Created the relation sound/word using CMU Sphinx
-\item Recorded 17,000 different words from 360 hours of audio
-\end{itemize}}
 
 %\cventry{2013}{Summer student}{Glyndwr Univeristy}{Wrexham}{Wales}{Learned and applied a set of tools for video games development: LightWave 3D, Torque3D, Photoshop}
 
@@ -158,12 +145,10 @@ The program also includes accounting, management, communication and two foreign 
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Awards}
+\section{Awards \& Succeeded MOOC}
 
 \cvitem{2015}{Prologin, French national computer science contest, ranked first}
 \cvitem{2014}{RobAfis, French national robotics contest, team ranked first}
-
-\section{Succeeded MOOC}
 \cvitem{Coursera}{Algorithms: Design and Analysis, Part 1 (98\%)}
 \cvitem{Coursera}{Automata (78.8\%)}
 \cvitem{Coursera}{Cryptography I (80\%)}
