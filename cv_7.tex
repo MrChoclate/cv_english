@@ -33,7 +33,7 @@
 
 \usepackage[scale=0.93]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{2.4cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -46,13 +46,12 @@
 \familyname{Villain} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Software Engineering Student}
-\address{13 rue d'Orléans}{Théméricourt, France 95450}
+\title{Software Engineering}
+\address{14 boulevard de la République}{Fontenay aux roses, France 92260}
 \mobile{+33 6 38 38 60 19}
-\email{villaincle@eisti.eu}
+\email{choclatefr@gmail.com}
 \extrainfo{%
   \faGithub~\httplink{github.com/MrChoclate}}
-%\quote{6 month internship from April, $10^{th}$}
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -63,41 +62,89 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Education}
-
-\cventry{2012-2017 (expected)}{EISTI}{École Internationale des Sciences du Traitement de l’Information}{Cergy, France}{}{A leading French software engineering school awarding a master's degree in computer information systems.
-The program also includes accounting, management, communication and two foreign languages.}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Experience}
 
-\subsection{Vocational}
+%\subsection{Vocational}
 
 %------------------------------------------------
 
-\cventry{2015--Present}{CTO}{\textsc{PolyLearn}}{Cergy}{France}{
+\cventry{2017--Present}{Software Engineer}{\textsc{Fabernovel}}{Paris}{France}{
+\begin{itemize}
+\item \textit{Hub} (2017-Present), internal tool for financial monitoring of projects, planning, billing and expense management
+	\begin{itemize}
+	\item Incremental overhaul of a Ruby on Rails legacy code base by applying Clean Code architecture
+	\item Create REST API and graphQL API (queries and mutations)
+	\item Develop SQL views, materialized views and database triggers to optimize computations of monthly KPIs
+	\item Monitor and optimise endpoints with New Relic
+	\item Setup Metabase and guide non technical users to create dashboards
+	\end{itemize}
+\item \textit{Pericles} (2017-2019), open source projet to help document REST APIs and prevent outdated documentation by analysing HTTP requests
+	\begin{itemize}
+	\item Implemented web pages with vue.js to create and edit documentation
+	\item Implemented code generators, json schemas and open api exports
+	\item Implemented an HTTP proxy to analyse and validate requests according to documentation
+%	\item Implemented a mock system based on documentation
+	\end{itemize}
+\item \textit{Beehive for Business} (2019-2020), a new B2B module for Beehive, a coworking system with self check-in for Alstria
+	\begin{itemize}
+	\item Implemented REST API and graphQL API with Ruby on Rails
+	\item Adapted existing system to allow a monthly payment of consumed subscriptions by the enterprise using Stripe
+%	\item Created time based related pricing conditions for enterprise
+	\end{itemize}
+\item \textit{My Vivacy} (2021), a website to verify poduct authenticity using RFID chip and download legal notices
+	\begin{itemize}
+	\item Implemented website and REST API with Ruby on Rails
+	\item Deployed infrastructure on Azure in France and Hong-Kong with terraform
+	\end{itemize}
+\item \textit{Back For Front} (2020), a Kotlin backend designed for mobile applications usage for Randstad
+	\begin{itemize}
+	\item Implemented a backend with Ktor as a facade to several APIs
+	\item Interacted with DevOps to deploy the service with kubernetes
+	\end{itemize}
+\item \textit{Ruby on Rails referent} (2020-Present)
+	\begin{itemize}
+	\item Animate Cotech, a monthly meeting to discuss good practices and technical challenges
+	\item Update and maintain a templater and code generators for fast bootsraps of CRUD endpoints
+	\item Participate to call to tenders
+	\item Compared monolithic technologies (Django, Rails, Nest.js) to choose our technological focus
+	\end{itemize}
+\item \textit{Software Factory admin} (2020-Present)
+	\begin{itemize}
+	\item Build and maintains Chef cookbook for macOS runners for our CI
+	\item Helped transition from Gerrit/Jenkins to Github/Github Actions by writing guides and workflows
+	\end{itemize}
+%\item Chat bots
+%\item Saddlery
+%\item GMP
+%\item ANTS
+%\item Scoutify
+\end{itemize}}
+
+\cventry{2015--2020}{Co-founder}{\textsc{PolyLearn}}{Cergy}{France}{
 \begin{itemize}
 \item Co-founded a start-up specialized in e-learning
 \item Developed and maintained \url{polylearn.co} with AngularJS and Python
-\item Used modern development practices: code reviews, continuous integration, testing
+%\item Used modern development practices: code reviews, continuous integration, testing
 \item Set up monitoring system via statsd and Prometheus
 \end{itemize}}
 
-\cventry{2014--Present}{Android Developer}{\textsc{EISTI}}{Cergy}{France}{
-\begin{itemize}
-\item Developed an Android application with Kivy framework in Python for the communication department of \textsc{EISTI}
-\item Linked the application to a ElasticSearch/Kibana server to visualize the collected data.
-\item Maintained the application
-\end{itemize}}
-
-\cventry{2014}{Intern}{\textsc{EISTI}}{Cergy}{France}{
-\begin{itemize}
-\item Applied community detection algorithm for a PhD student of \textsc{EISTI}
-\item Transformed data with Python scripts
-\item Used Hadoop map reduce
-\end{itemize}}
+%\cventry{2014--Present}{Android Developer}{\textsc{EISTI}}{Cergy}{France}{
+%\begin{itemize}
+%\item Developed an Android application with Kivy framework in Python for the communication department of \textsc{EISTI}
+%\item Linked the application to a ElasticSearch/Kibana server to visualize the collected data.
+%\item Maintained the application
+%\end{itemize}}
+%
+%\cventry{2014}{Intern}{\textsc{EISTI}}{Cergy}{France}{
+%\begin{itemize}
+%\item Applied community detection algorithm for a PhD student of \textsc{EISTI}
+%\item Transformed data with Python scripts
+%\item Used Hadoop map reduce
+%\end{itemize}}
 
 %------------------------------------------------
 %\newgeometry{scale=0.78, top=1cm, bottom=3cm}
@@ -112,22 +159,28 @@ The program also includes accounting, management, communication and two foreign 
 %~\\
 %~\\
 
-\subsection{Personal}
-
-\cventry{2015--2016}{President}{\textsc{ATILLA}, not-for-profit organisation}{Student hackerspace}{}{
-\begin{itemize}
-\item Organised training sessions, talks, events and trips for students
-\item Gave talks about fast inverse square root and hybrid mobile app
-\item Designed the front-end of an AI contest
-\end{itemize}}
-
-\cventry{2014--2016}{Math Examiner}{\textsc{EISTI}}{Cergy}{France}{
-\begin{itemize}
-\item Examined weekly mathematical knowledge of first and second year student at \textsc{EISTI}
-\end{itemize}}
+%\textsf{\subsection{Personal}
+%
+%\cventry{2015--2016}{President}{\textsc{ATILLA}, not-for-profit organisation}{Student hackerspace}{}{
+%\begin{itemize}
+%\item Organised training sessions, talks, events and trips for students
+%\item Gave talks about fast inverse square root and hybrid mobile app
+%\item Designed the front-end of an AI contest
+%\end{itemize}}
+%
+%\cventry{2014--2016}{Math Examiner}{\textsc{EISTI}}{Cergy}{France}{
+%\begin{itemize}
+%\item Examined weekly mathematical knowledge of first and second year student at \textsc{EISTI}
+%\end{itemize}}}
 
 
 %\cventry{2013}{Summer student}{Glyndwr Univeristy}{Wrexham}{Wales}{Learned and applied a set of tools for video games development: LightWave 3D, Torque3D, Photoshop}
+
+
+\section{Education}
+
+\cventry{2012-2017}{EISTI}{École Internationale des Sciences du Traitement de l’Information}{Cergy, France}{}{A leading French software engineering school awarding a master's degree in computer information systems.
+The program also includes accounting, management, communication and two foreign languages.}
 
 
 %----------------------------------------------------------------------------------------
@@ -136,22 +189,20 @@ The program also includes accounting, management, communication and two foreign 
 
 \section{Skills}
 
-\cvitem{Theory}{Algorithms, Data Structures, Complexity, Machine Learning}
-\cvitem{Languages}{Mainly used: Python, Javascript, Typescript, CSS \& HTML. \newline Worked with: C, C++, Java}
-\cvitem{Technologies}{Django, Celery, PostgreSQL, Apache Cordova, AngularJS, Polymer}
-\cvitem{Tools}{Git, Latex, Unix shell}
+\cvitem{Theory}{Algorithms, Data Structures, Complexity}
+\cvitem{Languages}{Mainly used: Ruby, Javascript\newline Worked with: Python, Kotlin, Nodejs}
+\cvitem{Technologies}{Ruby on Rails, Heroku, Django, Redis, PostgreSQL, nginx}
+\cvitem{Tools}{Git, Chef, Terraform, Unix shell}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Awards \& Succeeded MOOC}
-
-\cvitem{2015}{Prologin, French national computer science contest, ranked first}
-\cvitem{2014}{RobAfis, French national robotics contest, team ranked first}
-\cvitem{Coursera}{Algorithms: Design and Analysis, Part 1 (98\%)}
-\cvitem{Coursera}{Automata (78.8\%)}
-\cvitem{Coursera}{Cryptography I (80\%)}
+%\section{Awards \& Succeeded MOOC}
+%
+%\cvitem{2015}{Prologin, French national computer science contest, ranked first}
+%\cvitem{2014}{RobAfis, French national robotics contest, team ranked first}
+%\cvitem{Coursera}{Algorithms: Design and Analysis, Part 1 (98\%), Cryptography I (80\%), Automata (78.8\%)}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
@@ -171,8 +222,8 @@ The program also includes accounting, management, communication and two foreign 
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
-\cvitem{}{Open source software}
 \cvitem{}{French Coinche}
+\cvitem{}{Smash Bros}
 
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
